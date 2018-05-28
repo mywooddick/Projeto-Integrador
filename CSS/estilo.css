@@ -1,5 +1,925 @@
 @charset "UTF-8";
-html, body {
-    margin: 0;
-    background-color: bisque;    
+/* Fontes usadas */
+@font-face {
+    font-family: "Nilland";
+    src: url(../fonts/Nilland-Black.ttf);
 }
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../fonts/Century Gothic.ttf);
+}@font-face {
+    font-family: "Signature of the Ancient";
+    src: url(../fonts/Signature of the Ancient.ttf);
+}@font-face {
+    font-family: "Social";
+    src: url(../fonts/Social.otf);
+}
+/* Preparos gerais */
+html, body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+h6 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+}
+li, h1, h2, h4 {
+    font-family: "Century Gothic";
+}
+h2 {
+    color: white;
+    background-color: black;
+    height: 30px;
+    padding: 11px 15px 15px 15px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h4, h3 {
+    font-weight: normal;
+}
+p {
+    padding: 15px;
+    white-space: pre-line;
+}
+q {
+    position: absolute;
+    padding: 25px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: serif;
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+    color: #cbcbcb;
+}
+main {
+    position: relative;
+    width: 92.2%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+/* Cabeçalho da página */
+header {
+    position: relative;
+    border: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    min-height: 590px;
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 1190px;
+}
+header nav {
+    position: absolute;
+    height: 18%;
+    top: 7%;
+    width: 100%;
+    background-image: linear-gradient(to right, black, #0d0d0d,#1d1d1d, #2b2b2b, #1d1d1d, #0d0d0d, black);
+}
+header nav ul {
+    position: absolute;
+    bottom: 50%;
+    top: 36%;
+    margin: 0 3.9%;
+    padding: 0;
+    width: 92.2%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    display: inline;
+    text-transform: uppercase;
+}
+.redesocial {
+    width: 30px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#logo a {
+    position: absolute;
+    margin: 0;
+    top: -60%;
+    height: inherit;
+    width: inherit;
+}
+#logo a img {
+    position: absolute;
+    margin: 0;
+    height: 50px;
+    width: 150px;
+}
+#logo {
+    height: auto;
+    margin-right: 150px;
+}
+header nav ul li a {
+    color: #cbcbcb;
+    font-size: 1.5em;
+    font-size-adjust: 100%;
+    font-weight: bold;
+    background-color: white;
+    color: transparent;
+    text-shadow: 2px 1px 1px #0d0d0d;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; 
+}
+header nav ul li a:hover {
+    color: #cbcbcb;
+    font-size: 1.5em;
+    font-size-adjust: 100%;
+    font-weight: bold;
+    background-color: white;
+    color: transparent;
+    text-shadow: 2px 1px 1px #1b1b1b;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; 
+}
+#activelink {
+    color: #cbcbcb;
+    font-size: 1.5em;
+    font-size-adjust: 100%;
+    font-weight: bold;
+    background-color: #ffc000;
+    color: transparent;
+    text-shadow: 2px 1px 1px #0d0d0d;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; 
+}
+#activelink:hover {
+    color: #cbcbcb;
+    font-size: 1.5em;
+    font-size-adjust: 100%;
+    font-weight: bold;
+    background-color: #ffe13e;
+    color: transparent;
+    text-shadow: 2px 1px 1px #1c0000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; 
+}
+/* Conteúdo principal */
+article {
+    margin: auto;
+    background-color: white;
+    font-size: 1.1em;
+}   
+#principal {
+    position: relative;
+    margin-top: -5.5%;
+}
+#principal p {
+    padding: 25px;
+    padding-top: 100px;
+    text-align: justify;
+    font-size: 1.21em;
+}
+#pedidos {
+    position: relative;
+    margin-bottom: 0;
+    top: 0;
+    background-image: url(../images/pedidos.png);
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 402px;
+    min-width: 1190px;
+}
+#pedidos h2 {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 4.2%;
+    width: 44%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 22px 0; 
+    font-weight: bolder;
+    mix-blend-mode: screen; 
+}
+
+#pedidos > p {
+    position: absolute;
+    color: white;
+    width: 42%;
+    left: 5%;
+    top: 49%;
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 2em;
+    text-align: justify;
+}
+#pedidos section {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    top: 30%;
+}
+#pedidos section img {
+    width: 188px;
+    height: 118px;
+}
+#pedidos section p {
+    font-weight: normal;
+    font-family: "Century Gothic";
+    font-size: 0.9em;
+    position: absolute;
+    top: 0;
+    padding: 5px 10px;
+    right: 0;
+    letter-spacing: -1px;
+    word-spacing: 0px;
+    word-spacing: -1px;
+    font-weight: bolder;
+    word-spacing: -2px;
+}
+#pedidos h4 {
+    top: 118px;
+    margin: 12px 0;
+    padding: 9px 9px;
+    font-weight: normal;
+    font-size: 0.9em;
+    word-spacing: -1px;
+    font-weight: bolder;
+    word-spacing: -2px;
+}
+#pedido01 {
+    color: black;
+    right: 35.9%;
+}
+#pedido02 {
+    color: black;
+    right: 19.9%;
+}
+#pedido03 {
+    color: black;
+    right: 3.9%;
+}
+#pedidos section span {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    background-color: white;
+    mix-blend-mode: screen; 
+    color: black;
+    top: 118px;
+    left: 0;
+    margin: auto;
+}
+#local {
+    position:relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, black, #0d0d0d,#1d1d1d, #2b2b2b, #1d1d1d, #0d0d0d, black);
+}
+#local h2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    height: 30px;
+    padding: 15px 0 27px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-weight: bold;
+    background-color: white;
+    color: transparent;
+    text-shadow: 2px 1px 2px #0d0d0d;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; 
+}
+#local iframe {
+    margin: 0;
+    width: 100%;
+    height: 402px;
+    border: 0;
+    bottom: 0;
+}
+#linktopo {
+    position: absolute;
+    top: 0;
+}
+h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    font-weight: normal;
+}
+h2 {
+    font-weight: normal;
+}
+#sobre {
+    position: relative;
+    background: none;
+    font-size: 1em;
+    width: 100%;
+}
+#sobre a {
+    position: relative;
+    color: white;
+}
+#sobre section {
+    position: relative;
+    width: 83.8%;
+    background-color: white;
+    color: black;
+    margin-bottom: 1.2%;
+    overflow: hidden;
+}
+#sobre section img {
+    width: 172px;
+    height: 161px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: -0.38%;
+    
+}
+#sobre section p {
+    position: absolute;
+    top: 0;
+    max-width: 80%;
+    margin: auto;
+    right: 0;
+    padding-left: 182px;
+    padding-top: 70px; 
+    text-align: justify;
+    overflow: hidden;
+}
+#sobre section h2 {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: auto;
+    right: 0;
+    left: 172px;
+    height: 30px;
+    padding: 11px 15px 15px 15px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+#sobre section a:any-link {
+    color: black;
+}
+#sobre aside {
+    position: absolute;
+    width: 15%;
+    text-decoration: none;
+    color: white;
+    top: 0;
+    margin: 0 auto;
+    right: 0;
+    padding: 0 auto;
+}
+#sobre aside h2 {
+    margin: 0;
+    background-color: black;
+    color: white;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 11px 0 15px 0;
+}
+#sobre aside h2 a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sobre aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sobre aside ul li {
+    text-align: center;
+    height: 30px;
+    font-size: 1.8em;
+    padding: 11px 15px 15px 15px;
+    margin: 0;
+}
+#sobre aside ul li a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#listacafes {
+    background-image: url(../images/listacafes.png);
+    background-size: cover;
+    background-position: center;
+    color: white;    
+}
+#listadoces {
+    background-image: url(../images/listadoces.png);
+    background-size: cover;
+    background-position: center;
+}
+#listasalgados {
+    background-image: url(../images/listasalgados.png);
+    background-size: cover;
+    background-position: center;
+}
+#listabebidas {
+    background-image: url(../images/listabebidas.png);
+    background-size: cover;
+    background-position: center;
+}
+#listacestas {
+    background-image: url(../images/listacestas.png);
+    background-size: cover;
+    background-position: center;
+}
+#centro aside a:any-link {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    position: relative;
+    background-image: linear-gradient(to right, black, #0d0d0d,#1d1d1d, #2b2b2b, #1d1d1d, #0d0d0d, black);
+    clear: both;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 400px;
+    font-family: "Century Gothic";
+    text-shadow: 0px 0px 5px black;
+    color: #cbcbcb;
+}
+#linktopo {
+    position: absolute;
+    text-align: center;
+    width: 90px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+}
+footer h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #cbcbcb;
+    top: 0;
+    letter-spacing: 2px;
+} 
+footer ul {
+    list-style-type: none;
+    padding: 42px 0 0 0;
+}
+#footercoluna1 {
+    position: absolute;
+    width: 210px;
+    top: 13%;
+    left: 25%;
+}
+#footercoluna1 p {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+#footercoluna1 li {
+    display: inline;
+}
+#sobrenos li {
+    display: block;
+} 
+#footersocial {
+    position: relative;
+    left: 0;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#footersocial li {
+    padding: 10px 10px 0 0;
+}
+footer li a{
+    letter-spacing: 1px;
+    color: #999999;
+}
+footer section {
+    display: inline-block;
+}
+#footercoluna2 {
+    position: absolute;
+    width: 165px;
+    top: 13%;
+    right: 25%;
+    left: 25%;
+    margin: auto;
+    
+}
+#footercoluna3 {
+    position: absolute;
+    width: 165px;
+    top: 13%;
+    right: 25%;
+    
+}
+#logofooter {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    bottom: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 10px 0 60px 0;
+    border: 0;
+}
+#logofundodireito {
+    position: absolute;
+    bottom: 0;
+    right: 33%;
+    padding-bottom: 10px;
+}
+#logofundodireito p {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#logofundodireito a {
+    color: #00bfff;
+}
+#logofundoesquerdo {
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    padding-bottom: 25px;   
+}
+#logofundoesquerdo p {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #cbcbcb;
+}
+/* Conteúdo da página "Sobre o Café" */
+ol {
+    padding: 30px 60px;
+}
+ol, ol li a {
+    font-family: sans-serif;
+    font-size: 1.21em;
+    color: #457bcc;
+}
+#faq section {
+    position: relative;
+    padding: 0 15px;
+    margin: 0;
+}
+#faq h4 {
+    font-family: sans-serif;
+    font-size: 1.2em;   
+}
+#faq p {
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    border-bottom: solid 1px black;
+}
+#localsobre {
+    position: relative;
+    top: 20px;
+}
+#localsobre iframe {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    border: 0;
+    bottom: 0;
+}
+#localsobre p {
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+}
+/* Conteúdo da página "Cardápio"*/
+table {
+    text-shadow: 1px 2px 0px #cbcbcb;
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    padding-bottom: 80px;
+    margin: auto;
+    text-align: left;
+    border-spacing: 0;
+}
+thead th {
+    color: white;
+    background-color: black;
+    height: 30px;
+    padding: 11px 15px 15px 40px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    text-align: left;
+    text-shadow: none;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 1.8em;
+}
+tbody th {
+    text-align: center;
+    color: #d8c165;
+    font-family: "Signature of the Ancient";
+    font-size: 3em;
+    font-weight: normal;
+    padding: 25px 0 10px 0;
+}
+td {
+    padding: 0 30px 15px 30px;
+    color: #666666;
+    text-align: justify;
+}
+.nomedoproduto {
+    font-family: "Nilland";
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: black;
+}
+.preco {
+    font-family: "Nilland";
+    text-transform: uppercase;
+    font-size: 1em;
+    color: black;
+    right: 0;
+    text-align: right;
+    padding: 0 50px 15px 30px;
+}
+/* Conteúdo da página "Galeria*/
+#galeria {
+    position: relative;
+    margin-top: -3.8%;
+    background-color: #111111;
+    color: #cbcbcb;
+    height: 850px;
+    overflow: hidden;
+}
+#galeria h1 {
+    color: white;
+}
+#galeria > p {
+    position: absolute;
+    top: 105px;
+    padding: 25px 0;
+    margin: 0;
+    height: 25px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+#navgaleria {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    bottom: 25px;
+}
+#navgaleria li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#navgaleria li a{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#navgaleria li a img {
+    height: 100%;
+    bottom: 0;
+    max-width: 133px;
+}
+#fotocheia {
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    width: 100%;
+    top: 180px;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+#fotocheia section {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
+    padding: 0;
+}
+#fotocheia section h3 {
+    padding: 5px 20px;
+    margin: 0;
+    font-family: "Century Gothic";   
+}
+#fotocheia section p {
+    padding: 5px 50px;
+    margin: 0;
+    font-size: 0.8em;
+}
+#fotocheia section a {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#fotocheia section img {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+#fotocheia section span {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 1014px;
+    background-color: transparent;
+    color: transparent;
+    padding-top: 200px;
+}
+#fotocheia section span:hover {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: black;
+    width: 1013px;
+    color: #666666;
+    mix-blend-mode: luminosity;
+    background-clip: content-box; 
+}
+/* Conteúdo da página "Fale conosco */   
+#contato {
+    position: relative;
+    margin-top: -3.8%;
+    background-color: white;
+    height: 500px;
+    
+}
+#contato p {
+    padding: 0px 20px 0 20px;
+    text-align: justify;
+    font-size: 1.21em;
+}
+#contato section {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 85px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#contato section h2 {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    visibility: hidden;
+}
+#contatotel {
+    right: 5%;
+}
+#contatotel a {
+    color: black;
+    position: absolute;
+    bottom: 80px;
+    padding: 5px 60px;
+}
+#fbroundlogo {
+    position: absolute;
+    height: 30px;
+    left: 23px;
+    top: 0;
+}
+#contatoemail {
+    left: 5%;
+}
+#contatoemail p {
+    width: 95%;
+    display: flex;
+}
+form {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+label {
+    padding: 0 5px;
+    margin: 0;
+    border: 0;
+}
+input {
+    height: 30px;
+    padding: 0 10px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+#msgbox {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+textarea {
+    height: 100px;
+    padding: 5px 10px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    resize: none;
+}
+button {
+    height: 30px;
+    padding: 0 10px;
+    margin: auto;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Century Gothic";
+    background-color: #009cff;
+    font-weight: bolder;
+    color: white;
+}
+

@@ -2,97 +2,105 @@
 <html lang="pt-br">   
     <head>
         <meta charset="utf-8">
-        <title>Nome do bar</title>
+        <title>Nome do Café | Galeria</title>
         <link rel="stylesheet" href="CSS/estilo.css">
     </head>
     <body>
         <header id="header">
             <nav>
                 <ul>
-                    <li><a id="logo" href="index.html"><img src="#" alt="Logo" /></a></li>                  
+                    <li id="logo"><a href="index.html"><img src="images/logobasico.png" alt="Logo" /></a></li>                  
                     <li><a href="menu.html">Cardápio</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="galeria.html" id="activelink">Galeria</a></li>
                     <li><a href="sobre.html">Sobre o Café</a></li>
                     <li><a href="fale_conosco.html">Fale conosco</a></li>
-                    <li><a href="https://www.facebook.com">f</a></li>
-                    <li><a href="https://www.instagram.com">i</a></li>
-                    <li><a href="https://www.twitter.com">t</a></li>
+                    <li class="listaredes"><a href="https://www.facebook.com"><img src="images/fblogonav.png" alt="f" class="redesocial" /></a></li>
+                    <li class="listaredes"><a href="https://www.twitter.com"><img src="images/ttlogonav.png" alt="t" class="redesocial"/></a></li>
+                    <li class="listaredes"><a href="https://www.instagram.com"><img src="images/iglogonav.png" alt="i" class="redesocial"/></a></li>
                 </ul>                
             </nav>                    
         </header>
-        <article id="gallery">
-            <h1>Galeria</h1>
-            <p>Fotos tiradas do Café, de dentro ou fora do estabelecimento, pelo proprietário, um funcionário ou fotógrafo profissional cotratado</p>
-            <ul id="navigation">
-                <li><a href="#pic1"><img alt="" src="small_nature1.jpg" /></a></li>
-                <li><a href="#pic2"><img alt="" src="small_nature2.jpg" /></a></li>
-                <li><a href="#pic3"><img alt="" src="small_nature3.jpg" /></a></li>
-                <li><a href="#pic4"><img alt="" src="small_nature4.jpg" /></a></li>
-                <li><a href="#pic5"><img alt="" src="small_nature5.jpg" /></a></li>
-            </ul>
-            <section id="full-picture">
-                <h6>a</h6>
-                <section>
-                    <a id="pic1"></a>
-                    <img alt="" src="large_nature1.jpg" />
-                    <h3>Nome da imagem</h3>
-                    <p>Descrição da imagem</p>
-                    <p>Pessoas na foto</p>
-                    <p>Fotógrafo DD/MM/AA</p>
+        <main>
+            <article id="galeria">
+                <h1>Galeria</h1>
+                <p>Fotos tiradas do Café, de dentro ou fora do estabelecimento, pelo proprietário, um funcionário ou fotógrafo profissional cotratado.</p>
+                <ul id="navgaleria">
+                    <li><a href="#foto1"><img alt="" src="images/fotografia1.jpg" /></a></li>
+                    <li><a href="#foto2"><img alt="" src="images/fotografia2.jpg" /></a></li>
+                    <li><a href="#foto3"><img alt="" src="images/fotografia3.jpg" /></a></li>
+                    <li><a href="#foto4"><img alt="" src="images/fotografia4.jpg" /></a></li>
+                    <li><a href="#foto5"><img alt="" src="images/fotografia5.jpg" /></a></li>
+                </ul>
+                <section id="fotocheia">
+                    <h6>a</h6>
+                    <section>
+                        <img id="foto1" alt="" src="images/fotografia1.jpg" />
+                        <span>
+                            <h3>Nome da imagem 01</h3>
+                            <p>Descrição da imagem</p>
+                            <p>Pessoas na foto</p>
+                            <p>Fotógrafo DD/MM/AA</p>
+                        </span>
+                    </section>
+                    <section>
+                        <a id="foto2"></a>
+                        <img alt="" src="images/fotografia2.jpg" />
+                        <span>
+                            <h3>Nome da imagem 02</h3>
+                            <p>Descrição da imagem</p>
+                            <p>Pessoas na foto</p>
+                            <p>Fotógrafo DD/MM/AA</p>
+                        </span>
+                    </section>
+                    <section>
+                        <img id="foto3" alt="" src="images/fotografia3.jpg" />
+                        <span>
+                            <h3>Nome da imagem 03</h3>
+                            <p>Descrição da imagem</p>
+                            <p>Pessoas na foto</p>
+                            <p>Fotógrafo DD/MM/AA</p>
+                        </span>
+                    </section>
+                    <section>
+                        <img id="foto4" alt="" src="images/fotografia4.jpg" />
+                        <span>
+                            <h3>Nome da imagem 04</h3>
+                            <p>Descrição da imagem</p>
+                            <p>Pessoas na foto</p>
+                            <p>Fotógrafo DD/MM/AA</p>
+                        </span>
+                    </section>
+                    <section>
+                        <img id="foto5" alt="" src="images/fotografia5.jpg" />
+                        <span>
+                            <h3>Nome da imagem 05</h3>
+                            <p>Descrição da imagem</p>
+                            <p>Pessoas na foto</p>
+                            <p>Fotógrafo DD/MM/AA</p>
+                        </span>
+                    </section>
                 </section>
-                <section>
-                    <a id="pic2"></a>
-                    <img alt="" src="large_nature2.jpg" />
-                    <h3>Nome da imagem</h3>
-                    <p>Descrição da imagem</p>
-                    <p>Pessoas na foto</p>
-                    <p>Fotógrafo DD/MM/AA</p>
-                </section>
-                <section>
-                    <a id="pic3"></a>
-                    <img alt="" src="large_nature3.jpg" />
-                    <h3>Nome da imagem</h3>
-                    <p>Descrição da imagem</p>
-                    <p>Pessoas na foto</p>
-                    <p>Fotógrafo DD/MM/AA</p>
-                </section>
-                <section>
-                    <a id="pic4"></a>
-                    <img alt="" src="large_nature4.jpg" />
-                    <h3>Nome da imagem</h3>
-                    <p>Descrição da imagem</p>
-                    <p>Pessoas na foto</p>
-                    <p>Fotógrafo DD/MM/AA</p>
-                </section>
-                <section>
-                    <a id="pic5"></a>
-                    <img alt="" src="large_nature5.jpg" />
-                    <h3>Nome da imagem</h3>
-                    <p>Descrição da imagem</p>
-                    <p>Pessoas na foto</p>
-                    <p>Fotógrafo DD/MM/AA</p>
-                </section>
-            </section>
-        </article>
+            </article>
+        </main>
         <footer>
-            <a href="#logo">Topo</a>
-            <section id="coluna1">
+            <a id="linktopo" href="#header"> ▲ TOPO</a>
+            <section id="footercoluna1">
                 <h3>Sobre nós</h3>
-                <ul>
-                    <li><a href="#">Cozinha</a></li>
-                    <li><a href="#">Procedência</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">FAQ</a></li>
+                <ul id="sobrenos">
+                    <li><a href="sobre.html#cozinha">Cozinha</a></li>
+                    <li><a href="sobre.html#ingredientes">Origem dos materiais</a></li>
+                    <li><a href="sobre.html#historia">História</a></li>
+                    <li><a href="sobre.html#localsobre">Localização</a></li>
+                    <li><a href="sobre.html#faq">FAQ</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#">f</a></li>
-                    <li><a href="#">t</a></li>
-                    <li><a href="#">i</a></li>
+                <ul id="footersocial">
+                    <li><a href="https://www.facebook.com"><img src="images/fblogo.png" alt="f" class="redesocial" /></a></li>
+                    <li><a href="https://www.twitter.com"><img src="images/ttlogo.png" alt="t" class="redesocial"/></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/iglogo.png" alt="i" class="redesocial"/></a></li>
                 </ul>
-                <p>+551198765-4321</p>
+                <p>+55(11)98765-4321</p>
             </section>
-            <section id="coluna2">
+            <section id="footercoluna2">
                 <h3>Parceria</h3>
                 <ul>
                     <li><a href="#">Fulano</a></li>
@@ -100,7 +108,7 @@
                     <li><a href="#">Beltrano</a></li>
                 </ul>
             </section>
-            <section id="coluna3">
+            <section id="footercoluna3">
                 <h3>Mais do café</h3>
                 <ul>
                     <li><a href="#">Não</a></li>
@@ -111,13 +119,13 @@
                     <li><a href="#">Colocar</a></li>
                 </ul>
             </section>
-            <img src="#" alt="Logo" />
-            <section>
+            <img id="logofooter" src="images/logobasico.png" alt="Logo" />
+            <section id="logofundoesquerdo">
                 <h6>a</h6>
-                <p>&copy; 2018 Rafa Leme.</p>
+                <p>Copyright &copy; 2018 Rafa Leme.</p>
                 <p>All rights reserved.</p>
             </section>
-            <section>
+            <section id="logofundodireito">
                 <h6>a</h6>
                 <p><a href="#">Política de privacidade</a></p>
                 <p><a href="#">Mapa do site</a></p>
@@ -126,3 +134,4 @@
         </footer>
     </body>
 </html>
+

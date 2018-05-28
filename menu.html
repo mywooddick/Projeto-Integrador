@@ -1,188 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">    
+<html lang="pt-br">   
     <head>
         <meta charset="utf-8">
-        <title>Menu | Nome do Bar</title>
+        <title>Nome do Café | Cardápio</title>
         <link rel="stylesheet" href="CSS/estilo.css">
     </head>
     <body>
         <header id="header">
             <nav>
                 <ul>
-                    <li><a id="logo" href="index.html"><img src="#" alt="Logo" /></a></li>                  
-                    <li><a href="menu.html">Cardápio</a></li>
+                    <li id="logo"><a href="index.html"><img src="images/logobasico.png" alt="Logo" /></a></li>                  
+                    <li><a href="menu.html" id="activelink">Cardápio</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="sobre.html">Sobre o Café</a></li>
                     <li><a href="fale_conosco.html">Fale conosco</a></li>
-                    <li><a href="https://www.facebook.com">f</a></li>
-                    <li><a href="https://www.instagram.com">i</a></li>
-                    <li><a href="https://www.twitter.com">t</a></li>
+                    <li class="listaredes"><a href="https://www.facebook.com"><img src="images/fblogonav.png" alt="f" class="redesocial" /></a></li>
+                    <li class="listaredes"><a href="https://www.twitter.com"><img src="images/ttlogonav.png" alt="t" class="redesocial"/></a></li>
+                    <li class="listaredes"><a href="https://www.instagram.com"><img src="images/iglogonav.png" alt="i" class="redesocial"/></a></li>
                 </ul>                
             </nav>                    
         </header>
-        <article>
-            <h1>Cardápio</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome do Produto</th>
-                        <th>Descrição do produto</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th colspan="3">Cafés</th>
-                    </tr>
-                    <tr>
-                        <td>Bebida 01</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 02</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 03</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 04</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 05</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Doces</th>
-                    </tr>
-                    <tr>
-                        <td>Doce 01</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doce 02</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doce 03</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doce 04</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doce 05</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Salgados</th>
-                    </tr>
-                    <tr>
-                        <td>Salgado 01</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Salgado 02</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Salgado 03</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Salgado 04</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Salgado 05</td>
-                        <td>Lista de ingredientes e acompanhamentos adequados...   </td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Bebidas</th>
-                    </tr>
-                    <tr>
-                        <td>Bebida 01</td>
-                        <td>Descrição da bebida...</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 02</td>
-                        <td>Descrição da bebida...</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 03</td>
-                        <td>Descrição da bebida...</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 04</td>
-                        <td>Descrição da bebida...</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bebida 05</td>
-                        <td>Descrição da bebida...</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Cestas de Café da manhã</th>
-                    </tr>
-                    <tr>
-                        <td>Cesta 01</td>
-                        <td>Conteúdo da cesta</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Cesta 02</td>
-                        <td>Conteúdo da cesta</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Cesta 03</td>
-                        <td>Conteúdo da cesta</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>               
+        <main>
+            <article id="principal">
+                <h1>Cardápio</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit libero. Proin lobortis risus non mattis vulputate. Donec sit amet facilisis felis.</p>
+                <table id="cardapio">
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Descrição do produto</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="cafes">
+                            <th colspan="3">Cafés</th>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Café 01</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Café 02</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Café 03</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Café 04</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Café 05</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr id="doces">
+                            <th colspan="3">Doces</th>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Doce 01</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Doce 02</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Doce 03</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Doce 04</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Doce 05</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr id="salgados">
+                            <th colspan="3">Salgados</th>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Salgado 01</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Salgado 02</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Salgado 03</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Salgado 04</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Salgado 05</td>
+                            <td>Lista de ingredientes e acompanhamentos adequados...   </td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr id="bebidas">
+                            <th colspan="3">Bebidas</th>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Bebida 01</td>
+                            <td>Descrição da bebida...</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Bebida 02</td>
+                            <td>Descrição da bebida...</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Bebida 03</td>
+                            <td>Descrição da bebida...</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Bebida 04</td>
+                            <td>Descrição da bebida...</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Bebida 05</td>
+                            <td>Descrição da bebida...</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr id="cestas">
+                            <th colspan="3">Cestas de Café da Manhã</th>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Cesta 01</td>
+                            <td>Conteúdo da cesta</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Cesta 02</td>
+                            <td>Conteúdo da cesta</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td class="nomedoproduto">Cesta 03</td>
+                            <td>Conteúdo da cesta</td>
+                            <td class="preco">R$ 0,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <q>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</q>
+            </article>               
+        </main>
         <footer>
-            <a href="#logo">Topo</a>
-            <section id="coluna1">
+            <a id="linktopo" href="#header"> ▲ TOPO</a>
+            <section id="footercoluna1">
                 <h3>Sobre nós</h3>
-                <ul>
-                    <li><a href="#">Cozinha</a></li>
-                    <li><a href="#">Procedência</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">FAQ</a></li>
+                <ul id="sobrenos">
+                    <li><a href="sobre.html#cozinha">Cozinha</a></li>
+                    <li><a href="sobre.html#ingredientes">Origem dos materiais</a></li>
+                    <li><a href="sobre.html#historia">História</a></li>
+                    <li><a href="sobre.html#localsobre">Localização</a></li>
+                    <li><a href="sobre.html#faq">FAQ</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#">f</a></li>
-                    <li><a href="#">t</a></li>
-                    <li><a href="#">i</a></li>
+                <ul id="footersocial">
+                    <li><a href="https://www.facebook.com"><img src="images/fblogo.png" alt="f" class="redesocial" /></a></li>
+                    <li><a href="https://www.twitter.com"><img src="images/ttlogo.png" alt="t" class="redesocial"/></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/iglogo.png" alt="i" class="redesocial"/></a></li>
                 </ul>
-                <p>+551198765-4321</p>
+                <p>+55(11)98765-4321</p>
             </section>
-            <section id="coluna2">
+            <section id="footercoluna2">
                 <h3>Parceria</h3>
                 <ul>
                     <li><a href="#">Fulano</a></li>
@@ -190,7 +194,7 @@
                     <li><a href="#">Beltrano</a></li>
                 </ul>
             </section>
-            <section id="coluna3">
+            <section id="footercoluna3">
                 <h3>Mais do café</h3>
                 <ul>
                     <li><a href="#">Não</a></li>
@@ -201,13 +205,13 @@
                     <li><a href="#">Colocar</a></li>
                 </ul>
             </section>
-            <img src="#" alt="Logo" />
-            <section>
+            <img id="logofooter" src="images/logobasico.png" alt="Logo" />
+            <section id="logofundoesquerdo">
                 <h6>a</h6>
-                <p>&copy; 2018 Rafa Leme.</p>
+                <p>Copyright &copy; 2018 Rafa Leme.</p>
                 <p>All rights reserved.</p>
             </section>
-            <section>
+            <section id="logofundodireito">
                 <h6>a</h6>
                 <p><a href="#">Política de privacidade</a></p>
                 <p><a href="#">Mapa do site</a></p>
@@ -216,3 +220,4 @@
         </footer>
     </body>
 </html>
+
