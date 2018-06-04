@@ -358,6 +358,7 @@ h2 {
     color: black;
     margin-bottom: 1.2%;
     overflow: hidden;
+    min-height: 161px;
 }
 #sobre section img {
     width: 172px;
