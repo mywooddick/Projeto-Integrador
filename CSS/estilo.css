@@ -8,8 +8,8 @@
     font-family: "Century Gothic";
     src: url(../fonts/Century Gothic.ttf);
 }@font-face {
-    font-family: "Signature of the Ancient";
-    src: url(../fonts/Signature of the Ancient.ttf);
+    font-family: "Signature";
+    src: url(../fonts/Signature.ttf);
 }@font-face {
     font-family: "Social";
     src: url(../fonts/Social.otf);
@@ -673,7 +673,7 @@ thead th {
 tbody th {
     text-align: center;
     color: #d8c165;
-    font-family: "Signature of the Ancient";
+    font-family: "Signature";
     font-size: 3em;
     font-weight: normal;
     padding: 25px 0 10px 0;
