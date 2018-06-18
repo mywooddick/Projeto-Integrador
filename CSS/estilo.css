@@ -822,7 +822,7 @@ td {
     position: relative;
     margin-top: -3.8%;
     background-color: white;
-    height: 500px;
+    height: 525px;
     
 }
 #contato p {
@@ -853,7 +853,7 @@ td {
 #contatotel a {
     color: black;
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     padding: 5px 60px;
 }
 #fbroundlogo {
@@ -900,6 +900,15 @@ input {
     padding: 0;
     margin: 0;
     border: 0;
+}
+select {
+    height: 30px;
+    padding: 0 10px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-between;
+    width: 100%;
 }
 textarea {
     height: 100px;
