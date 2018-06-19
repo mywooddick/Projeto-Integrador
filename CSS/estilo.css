@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: "Century Gothic";
-    src: url(../fonts/Century Gothic.ttf);
+    src: url(../fonts/Century\ Gothic.ttf);
 }@font-face {
     font-family: "Signature";
     src: url(../fonts/Signature.ttf);
@@ -138,7 +138,6 @@ header nav ul li {
 header nav ul li a {
     color: #cbcbcb;
     font-size: 1.5em;
-    font-size-adjust: 100%;
     font-weight: bold;
     background-color: white;
     color: transparent;
@@ -150,7 +149,6 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #cbcbcb;
     font-size: 1.5em;
-    font-size-adjust: 100%;
     font-weight: bold;
     background-color: white;
     color: transparent;
@@ -162,7 +160,6 @@ header nav ul li a:hover {
 #activelink {
     color: #cbcbcb;
     font-size: 1.5em;
-    font-size-adjust: 100%;
     font-weight: bold;
     background-color: #ffc000;
     color: transparent;
@@ -174,7 +171,6 @@ header nav ul li a:hover {
 #activelink:hover {
     color: #cbcbcb;
     font-size: 1.5em;
-    font-size-adjust: 100%;
     font-weight: bold;
     background-color: #ffe13e;
     color: transparent;
@@ -236,7 +232,7 @@ article {
     line-height: 2em;
     text-align: justify;
 }
-#pedidos section {
+#pedidos > section {
     position: absolute;
     width: 188px;
     height: 188px;
@@ -245,11 +241,11 @@ article {
     border: 0;
     top: 30%;
 }
-#pedidos section img {
+#pedidos > section img {
     width: 188px;
     height: 118px;
 }
-#pedidos section p {
+#pedidos > section p {
     font-weight: normal;
     font-family: "Century Gothic";
     font-size: 0.9em;
@@ -285,7 +281,7 @@ article {
     color: black;
     right: 3.9%;
 }
-#pedidos section span {
+#pedidos section section {
     position: absolute;
     width: 100%;
     background-color: white;
@@ -406,7 +402,8 @@ h2 {
     top: 0;
     margin: 0 auto;
     right: 0;
-    padding: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 #sobre aside h2 {
     margin: 0;
@@ -759,7 +756,7 @@ td {
     border: 0;
     overflow: hidden;
 }
-#fotocheia section {
+#fotocheia > section {
     position: relative;
     right: 0;
     left: 0;
@@ -768,23 +765,23 @@ td {
     width: auto;
     padding: 0;
 }
-#fotocheia section h3 {
+#fotocheia > section h3 {
     padding: 5px 20px;
     margin: 0;
     font-family: "Century Gothic";   
 }
-#fotocheia section p {
+#fotocheia > section p {
     padding: 5px 50px;
     margin: 0;
     font-size: 0.8em;
 }
-#fotocheia section a {
+#fotocheia > section a {
     position: absolute;
     padding: 0;
     margin: 0;
     border: 0;
 }
-#fotocheia section img {
+#fotocheia > section img {
     position: absolute;
     top: 0;
     margin: auto;
@@ -792,7 +789,7 @@ td {
     left: 0;
     height: 100%;
 }
-#fotocheia section span {
+#fotocheia > section > section {
     position: absolute;
     height: 20%;
     bottom: 0;
@@ -804,7 +801,7 @@ td {
     color: transparent;
     padding-top: 200px;
 }
-#fotocheia section span:hover {
+#fotocheia > section > section:hover {
     position: absolute;
     height: 20%;
     bottom: 0;
